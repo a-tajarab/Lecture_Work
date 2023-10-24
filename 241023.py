@@ -25,3 +25,9 @@ for count in myRange:
 knights = ["bill", "jack", "ben", "henry"]
 for knight in knights:
     print(knight)
+
+    if temp > 13.5:
+        print("Stay put and tell us the temp throughout the day")
+    else:
+        print("Weather is below average. Better wrap up!")
+        print("Cheerio")
