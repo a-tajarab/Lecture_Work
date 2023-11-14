@@ -1,10 +1,15 @@
-from string import ascii_lowercase as letters
+from string import ascii_lowercase as lowers
+from string import ascii_uppercase as uppers
 def rot_13(message):
-    rotters = letters[13:] + letters[:13]
+    rotters_lower = lowers[13:] + lowers[:13]
+    rotter_upper = uppers[13:] + uppers[:13]
     output = ''
     for c in message:      # iteration
-        pos = letters.find(c)
-        output += rotters[pos]
+        if c == '':
+            output += ''
+        else:
+            pos = letters.find(c)
+            output += rotters[pos]
     return output
 
 
